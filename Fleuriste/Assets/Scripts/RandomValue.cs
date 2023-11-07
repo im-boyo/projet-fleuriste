@@ -1,24 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RandomValue : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Sprite[] Fleurs;
+    public Image[] Commande;
+    private int chiffreRandom = 0;
+
+    public void commandeClient ()
     {
-        
+        Commande[0].sprite = Fleurs[chiffreRandom];
     }
 
-    void RandomColor() {
-        int randomNb = Random.Range(0, 2);
-        Debug.Log($"{randomNb}");
-
-    }
-
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        commandeClient();
     }
 }
