@@ -8,10 +8,11 @@ public class RandomValue : MonoBehaviour
 {
     public Sprite[] Fleurs;
     public Image[] Commande;
-    private int chiffreRandom = 0;
+    public Material[] Material;
 
     public void commandeClient ()
     {
+        int chiffreRandom = Random.Range(0, 2);
         Commande[0].sprite = Fleurs[chiffreRandom];
     }
 
