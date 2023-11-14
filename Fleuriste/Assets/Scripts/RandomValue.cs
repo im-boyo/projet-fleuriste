@@ -8,16 +8,23 @@ public class RandomValue : MonoBehaviour
 {
     public Sprite[] Fleurs;
     public Image[] Commande;
-    public Material[] Material;
+    public Material[] materials;
+    public GameObject Button;
+    public MeshRenderer meshRenderer;
 
-    public void commandeClient ()
+
+
+        public void commandeClient ()
     {
         int chiffreRandom = Random.Range(0, 2);
         Commande[0].sprite = Fleurs[chiffreRandom];
+        meshRenderer.material = materials[chiffreRandom];
     }
 
-    private void Start()
+        private void Start()
     {
         commandeClient();
+        
     }
+
 }
