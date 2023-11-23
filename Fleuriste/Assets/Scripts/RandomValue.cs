@@ -11,8 +11,6 @@ public class RandomValue : MonoBehaviour
     public Material[] materials;
     public GameObject Button;
     public MeshRenderer meshRenderer;
-    public GameObject client;
-
 
 
         public void commandeClient ()

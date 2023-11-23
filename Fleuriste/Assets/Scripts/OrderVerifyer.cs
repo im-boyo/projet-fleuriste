@@ -4,6 +4,16 @@ using UnityEngine;
 
 public class OrderVerifyer : MonoBehaviour
 {
+
+    private void OnTriggerEnter(Collider other){
+        if(other.tag == "Bouquet"){
+            if (gameflow.bouquetValue==gameflow.orderValue){
+                Debug.Log("correct!");
+            } else {
+                Debug.Log("Incorrect!");
+            }
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
