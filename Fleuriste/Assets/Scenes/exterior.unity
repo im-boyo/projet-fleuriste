@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2159.554, g: 2263.344, b: 3286.3755, a: 1}
+  m_IndirectSpecularColor: {r: 2160.3733, g: 2264.051, b: 3286.5864, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3758,7 +3758,6 @@ MonoBehaviour:
   - {fileID: 0}
   Button: {fileID: 319998201}
   meshRenderer: {fileID: 319998203}
-  client: {fileID: 1203169843}
 --- !u!95 &1203169850
 Animator:
   serializedVersion: 5

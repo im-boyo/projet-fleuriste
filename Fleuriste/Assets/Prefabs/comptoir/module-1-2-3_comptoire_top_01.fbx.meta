@@ -3,7 +3,12 @@ guid: 19ae5d563e0b192498223216360a5f8f
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: granit
+    second: {fileID: 2100000, guid: a2223befaabea5644ae733aef18bbdb7, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
