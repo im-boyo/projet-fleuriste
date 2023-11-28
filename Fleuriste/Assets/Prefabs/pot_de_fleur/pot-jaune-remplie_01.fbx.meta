@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fecd31b91e076a84aa401a250a240efc
+guid: 2cfa65d076c12694fbefedd7f9079307
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,8 +7,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: white_wood
-    second: {fileID: 2100000, guid: 4fd0578c525d12d49932a7e311b04ac7, type: 2}
+      name: aiStandardSurface2
+    second: {fileID: 2100000, guid: 9dd25ad6dfe6a2745a8a6e1b4ebf549a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: terre
+    second: {fileID: 2100000, guid: e1eff5b4510b36a44bcd891d828c4405, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

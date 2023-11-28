@@ -3,7 +3,42 @@ guid: a283d65fcd700224aa23d6ce023da1c8
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plastic_top_caisse
+    second: {fileID: 2100000, guid: fd229cd2f77a8eb4c92d697fa246e6e3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White_metal
+    second: {fileID: 2100000, guid: 4bd3ec6fc3a6fd642b12e59b953f5815, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: caisse_screen
+    second: {fileID: 2100000, guid: 42a2d3033f023d94092b63733ca01a8a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dark_metal
+    second: {fileID: 2100000, guid: 2f25d40176bde864ea740cc3314f24ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: keyboard_caisse
+    second: {fileID: 2100000, guid: c402a81acedfbba4481abee5c794d3f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plastic_bottom_caisse
+    second: {fileID: 2100000, guid: ac8b7d48c52d68049a127b5282f33a27, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plastic_piece_with_hole
+    second: {fileID: 2100000, guid: 706e673a5944b0446a7bef7cdbe16c87, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
