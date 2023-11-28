@@ -1,9 +1,19 @@
 fileFormatVersion: 2
-guid: 40e500257f2f9be46869faf3da10d08d
+guid: b7a507cd4a1ade94f9c799fcf19967d0
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface5
+    second: {fileID: 2100000, guid: 5eb1d3393c93bec40b7887a6e7383230, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: capsulePlain_standardSurface1_BaseColor
+    second: {fileID: 2800000, guid: 98d9604c0c1132e4f90ed56c5468f50e, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

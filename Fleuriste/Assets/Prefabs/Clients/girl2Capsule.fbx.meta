@@ -1,9 +1,24 @@
 fileFormatVersion: 2
-guid: 83a13a57e04a1d4468bb02e0c497812d
+guid: 240321d8d1297f843b04d839c5de9256
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black
+    second: {fileID: 2100000, guid: c3a45c5c5f0bb4141b7128b9a176f6f2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Girl2
+    second: {fileID: 2100000, guid: 458806e13b151ad40b080d2a333561b8, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: capsulePlain_standardSurface1_BaseColor
+    second: {fileID: 2800000, guid: 49dfe046c34b18c4d86151d6b6e267b0, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
