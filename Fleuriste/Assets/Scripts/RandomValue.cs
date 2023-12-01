@@ -8,22 +8,24 @@ public class RandomValue : MonoBehaviour
 {
     public Sprite[] Fleurs;
     public Image[] Commande;
-    public Material[] materials;
     public GameObject Button;
     public MeshRenderer meshRenderer;
-    public static int chiffreRandom = Random.Range(0, 2);
+    public GameObject OrderCanvas;
+    public static int randomNumber;
 
 
         public void commandeClient ()
     {
+        int chiffreRandom = Random.Range(0, 2);
+        randomNumber = chiffreRandom;
         Commande[0].sprite = Fleurs[chiffreRandom];
-        meshRenderer.material = materials[chiffreRandom];
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "StartOrder")
         {
+            OrderCanvas.SetActive(true);
             commandeClient();
         } 
     }
@@ -32,8 +34,7 @@ public class RandomValue : MonoBehaviour
     {
         if(other.tag == "StartOrder")
         {
-        Commande[0].sprite = Fleurs[2];
-        meshRenderer.material = materials[2];
+        OrderCanvas.SetActive(false);
         } 
     }
 
