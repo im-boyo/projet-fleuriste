@@ -11,11 +11,11 @@ public class RandomValue : MonoBehaviour
     public Material[] materials;
     public GameObject Button;
     public MeshRenderer meshRenderer;
+    public static int chiffreRandom = Random.Range(0, 2);
 
 
         public void commandeClient ()
     {
-        int chiffreRandom = Random.Range(0, 2);
         Commande[0].sprite = Fleurs[chiffreRandom];
         meshRenderer.material = materials[chiffreRandom];
     }
