@@ -7,6 +7,7 @@ TagManager:
   - StartOrder
   - GiveOrder
   - Bouquet
+  - MainDoorArea
   layers:
   - Default
   - TransparentFX
