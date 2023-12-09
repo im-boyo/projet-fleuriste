@@ -7,14 +7,14 @@ public class NewBehaviourScript : MonoBehaviour
 
     public Animator mainDoor;
 
-    public void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        if( other.tag == "MainDoorArea")
+        if (other.tag == "MainDoorArea")
         {
             mainDoor.Play("Ouverture");
         }
     }
-    public void OnTriggerExit(Collider other)
+    private void OnTriggerExit(Collider other)
     {
         if (other.tag == "MainDoorArea")
         {
