@@ -8,6 +8,7 @@ TagManager:
   - GiveOrder
   - Bouquet
   - MainDoorArea
+  - Pot
   layers:
   - Default
   - TransparentFX
