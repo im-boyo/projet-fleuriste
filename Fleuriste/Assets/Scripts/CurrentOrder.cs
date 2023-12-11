@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class CurrentOrder : MonoBehaviour
 {
     public int flowerValue;
     public GameObject flowerPrefab;
     private Vector3 flowerPosition;
+    private Quaternion flowerRotation;
     public int doesItExist = 0;
     // Start is called before the first frame update
 
@@ -21,12 +23,14 @@ public class CurrentOrder : MonoBehaviour
     void Start()
     {
         flowerPosition = transform.position;
+        flowerRotation = transform.rotation;
     }
       private IEnumerator createPrefab()
     {
         yield return new WaitForSeconds(1f);
-        Instantiate(flowerPrefab, flowerPosition, Quaternion.identity);
         doesItExist = 0;
+        Instantiate(flowerPrefab, flowerPosition, flowerRotation);
+        yield return new WaitForSeconds(1f);
         Debug.Log(doesItExist);
         yield break;
     }
