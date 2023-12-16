@@ -145,7 +145,7 @@ MonoBehaviour:
   m_OnSelectExited:
     m_PersistentCalls:
       m_Calls: []
-  m_ShowInteractableHoverMeshes: 1
+  m_ShowInteractableHoverMeshes: 0
   m_InteractableHoverMeshMaterial: {fileID: 0}
   m_InteractableCantHoverMeshMaterial: {fileID: 0}
   m_SocketActive: 1
@@ -288,7 +288,7 @@ MonoBehaviour:
   m_OnSelectExited:
     m_PersistentCalls:
       m_Calls: []
-  m_ShowInteractableHoverMeshes: 1
+  m_ShowInteractableHoverMeshes: 0
   m_InteractableHoverMeshMaterial: {fileID: 0}
   m_InteractableCantHoverMeshMaterial: {fileID: 0}
   m_SocketActive: 1
@@ -431,7 +431,7 @@ MonoBehaviour:
   m_OnSelectExited:
     m_PersistentCalls:
       m_Calls: []
-  m_ShowInteractableHoverMeshes: 1
+  m_ShowInteractableHoverMeshes: 0
   m_InteractableHoverMeshMaterial: {fileID: 0}
   m_InteractableCantHoverMeshMaterial: {fileID: 0}
   m_SocketActive: 1
@@ -543,7 +543,7 @@ MonoBehaviour:
   m_OnSelectExited:
     m_PersistentCalls:
       m_Calls: []
-  m_ShowInteractableHoverMeshes: 1
+  m_ShowInteractableHoverMeshes: 0
   m_InteractableHoverMeshMaterial: {fileID: 0}
   m_InteractableCantHoverMeshMaterial: {fileID: 0}
   m_SocketActive: 1
@@ -655,7 +655,7 @@ MonoBehaviour:
   m_OnSelectExited:
     m_PersistentCalls:
       m_Calls: []
-  m_ShowInteractableHoverMeshes: 1
+  m_ShowInteractableHoverMeshes: 0
   m_InteractableHoverMeshMaterial: {fileID: 0}
   m_InteractableCantHoverMeshMaterial: {fileID: 0}
   m_SocketActive: 1
@@ -838,6 +838,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 5909995276808299228}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: dc441b913a1fc1242a846b9eb72956ba,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4400894587844534776}
   m_SourcePrefab: {fileID: 100100000, guid: dc441b913a1fc1242a846b9eb72956ba, type: 3}
 --- !u!4 &7414952007172580850 stripped
 Transform:
@@ -1068,7 +1072,30 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.007866731
-  m_Height: 0.019852998
+  m_Radius: 0.010408131
+  m_Height: 0.025251731
   m_Direction: 1
-  m_Center: {x: 0, y: 0.016930789, z: 0}
+  m_Center: {x: 0, y: 0.017415583, z: 0}
+--- !u!136 &4400894587844534776
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7902941296802086728}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.009553088
+  m_Height: 0.026053628
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.02570081, z: 0}

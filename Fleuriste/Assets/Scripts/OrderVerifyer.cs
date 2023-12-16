@@ -7,7 +7,7 @@ public class OrderVerifyer : MonoBehaviour
 
     private void OnTriggerEnter(Collider other){
         if(other.tag == "Bouquet"){
-            if (gameflow.bouquetValue == gameflow.orderValue[RandomValue.randomNumber]){
+            if (gameflow.bouquetValue == gameflow.orderValue){
                 Debug.Log("correct!");
             } else {
                 Debug.Log("Incorrect!");

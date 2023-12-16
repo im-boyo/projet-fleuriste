@@ -31,7 +31,6 @@ public class CurrentOrder : MonoBehaviour
         doesItExist = 0;
         Instantiate(flowerPrefab, flowerPosition, flowerRotation);
         yield return new WaitForSeconds(1f);
-        Debug.Log(doesItExist);
         yield break;
     }
   private void OnTriggerExit(Collider other)
@@ -42,15 +41,13 @@ public class CurrentOrder : MonoBehaviour
             Debug.Log(gameflow.bouquetValue + "  " + gameflow.orderValue);
         } else if (other.tag == "Pot")
         {
-            Debug.Log(doesItExist);
+            Debug.Log("Order Value " + gameflow.orderValue);
             if (doesItExist == 0)
             {
                 doesItExist = 1;
-                Debug.Log("It's out");
                 StartCoroutine("createPrefab");
             } else if (doesItExist == 1)
             {
-                Debug.Log("Gyat");
                 doesItExist = 0;
             }
         }
