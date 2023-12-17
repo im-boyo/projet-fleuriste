@@ -9,6 +9,8 @@ TagManager:
   - Bouquet
   - MainDoorArea
   - Pot
+  - Ground
+  - NextClient
   layers:
   - Default
   - TransparentFX
