@@ -31,6 +31,76 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6110010181336215292}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4436091680889461883
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6011070104778856561}
+  - component: {fileID: 269452352622825830}
+  - component: {fileID: 7670930361604416329}
+  m_Layer: 6
+  m_Name: Destroy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &6011070104778856561
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4436091680889461883}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6110010181336215292}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &269452352622825830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4436091680889461883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848c194a7a8ae4a419dc6f6fec24b897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  self: {fileID: 6881725973467821126}
+  destroyerGameobject: {fileID: 4436091680889461883}
+--- !u!136 &7670930361604416329
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4436091680889461883}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.008449965
+  m_Height: 0.12100699
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.057044804, z: 0}
 --- !u!1001 &5999257178189187351
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1020,6 +1090,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 3432386438447851843}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: b737b7e9358d75a40950723828202552,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6011070104778856561}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b737b7e9358d75a40950723828202552,
         type: 3}
@@ -1065,6 +1139,7 @@ MonoBehaviour:
   flowerValue: 100
   flowerPrefab: {fileID: 6881725973467821126}
   doesItExist: 0
+  destroyerGameobject: {fileID: 4436091680889461883}
 --- !u!136 &761457647542579870
 CapsuleCollider:
   m_ObjectHideFlags: 0

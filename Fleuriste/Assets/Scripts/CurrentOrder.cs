@@ -10,6 +10,7 @@ public class CurrentOrder : MonoBehaviour
     private Vector3 flowerPosition;
     private Quaternion flowerRotation;
     public int doesItExist = 0;
+    public GameObject destroyerGameobject;
     // Start is called before the first frame update
 
     private void OnTriggerEnter(Collider other)
@@ -17,6 +18,7 @@ public class CurrentOrder : MonoBehaviour
         if (other.tag == "Bouquet")
         {
             gameflow.bouquetValue += flowerValue;
+            destroyerGameobject.SetActive(true);
             Debug.Log(gameflow.bouquetValue + "  " + gameflow.orderValue);
         }
     }

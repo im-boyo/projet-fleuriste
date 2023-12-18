@@ -13,8 +13,10 @@ public class OrderVerifyer : MonoBehaviour
             if (gameflow.bouquetValue == gameflow.orderValue){
                 Debug.Log("correct!");
                 StartCoroutine("animLeave");
+                gameflow.bouquetValue = 0;
             } else {
                 Debug.Log("Incorrect!");
+                gameflow.bouquetValue = 0;
             }
         } else if (other.tag == "NextClient")
         {
@@ -35,10 +37,7 @@ public class OrderVerifyer : MonoBehaviour
         yield break;
     }
 
-    public void commencerJeu()
-    {
-        girl1.Play("WalkIn");
-    }
+
 
     // Start is called before the first frame update
     void Start()

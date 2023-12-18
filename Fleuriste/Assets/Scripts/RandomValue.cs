@@ -32,19 +32,19 @@ public class RandomValue : MonoBehaviour
         chiffreRandom1 = Random.Range(0, 5);
         if (chiffreRandom1 == 0)
         {
-            gameflow.orderValue += 1;
+            gameflow.orderValue += 3;
         } else if (chiffreRandom1 == 1)
         {
-            gameflow.orderValue += 10;
+            gameflow.orderValue += 30;
         } else if (chiffreRandom1 == 2)
         {
-            gameflow.orderValue += 100;
+            gameflow.orderValue += 300;
         } else if (chiffreRandom1 == 3)
         {
-            gameflow.orderValue += 1000;
+            gameflow.orderValue += 3000;
         } else if (chiffreRandom1 == 4) 
         { 
-            gameflow.orderValue += 10000;
+            gameflow.orderValue += 30000;
         }
         Commande[0].sprite = Fleurs[chiffreRandom1];
         orderImage1.SetActive(true);
@@ -52,23 +52,23 @@ public class RandomValue : MonoBehaviour
         chiffreRandom2 = Random.Range(0, 5);
         if (chiffreRandom2 == 0)
         {
-            gameflow.orderValue += 1;
+            gameflow.orderValue += 3;
         }
         else if (chiffreRandom2 == 1)
         {
-            gameflow.orderValue += 10;
+            gameflow.orderValue += 30;
         }
         else if (chiffreRandom2 == 2)
         {
-            gameflow.orderValue += 100;
+            gameflow.orderValue += 300;
         }
         else if (chiffreRandom2 == 3)
         {
-            gameflow.orderValue += 1000;
+            gameflow.orderValue += 3000;
         }
         else if (chiffreRandom2 == 4)
         {
-            gameflow.orderValue += 10000;
+            gameflow.orderValue += 30000;
         }
         Commande[1].sprite = Fleurs[chiffreRandom2];
 
@@ -77,23 +77,23 @@ public class RandomValue : MonoBehaviour
         chiffreRandom3 = Random.Range(0, 5);
         if (chiffreRandom3 == 0)
         {
-            gameflow.orderValue += 1;
+            gameflow.orderValue += 3;
         }
         else if (chiffreRandom3 == 1)
         {
-            gameflow.orderValue += 10;
+            gameflow.orderValue += 30;
         }
         else if (chiffreRandom3 == 2)
         {
-            gameflow.orderValue += 100;
+            gameflow.orderValue += 300;
         }
         else if (chiffreRandom3 == 3)
         {
-            gameflow.orderValue += 1000;
+            gameflow.orderValue += 3000;
         }
         else if (chiffreRandom3 == 4)
         {
-            gameflow.orderValue += 10000;
+            gameflow.orderValue += 30000;
         }
         Commande[2].sprite = Fleurs[chiffreRandom3];
         orderImage3.SetActive(true);
@@ -101,23 +101,23 @@ public class RandomValue : MonoBehaviour
         chiffreRandom4 = Random.Range(0, 5);
         if (chiffreRandom4 == 0)
         {
-            gameflow.orderValue += 1;
+            gameflow.orderValue += 3;
         }
         else if (chiffreRandom4 == 1)
         {
-            gameflow.orderValue += 10;
+            gameflow.orderValue += 30;
         }
         else if (chiffreRandom4 == 2)
         {
-            gameflow.orderValue += 100;
+            gameflow.orderValue += 300;
         }
         else if (chiffreRandom4 == 3)
         {
-            gameflow.orderValue += 1000;
+            gameflow.orderValue += 3000;
         }
         else if (chiffreRandom4 == 4)
         {
-            gameflow.orderValue += 10000;
+            gameflow.orderValue += 30000;
         }
         Commande[3].sprite = Fleurs[chiffreRandom4];
         orderImage4.SetActive(true);
@@ -125,23 +125,23 @@ public class RandomValue : MonoBehaviour
         chiffreRandom5 = Random.Range(0, 5);
         if (chiffreRandom5 == 0)
         {
-            gameflow.orderValue += 1;
+            gameflow.orderValue += 3;
         }
         else if (chiffreRandom5 == 1)
         {
-            gameflow.orderValue += 10;
+            gameflow.orderValue += 30;
         }
         else if (chiffreRandom5 == 2)
         {
-            gameflow.orderValue += 100;
+            gameflow.orderValue += 300;
         }
         else if (chiffreRandom5 == 3)
         {
-            gameflow.orderValue += 1000;
+            gameflow.orderValue += 3000;
         }
         else if (chiffreRandom5 == 4)
         {
-            gameflow.orderValue += 10000;
+            gameflow.orderValue += 30000;
         }
         Commande[4].sprite = Fleurs[chiffreRandom5];
         orderImage5.SetActive(true);
@@ -154,6 +154,7 @@ public class RandomValue : MonoBehaviour
         {
             OrderCanvas.SetActive(true);
             StartCoroutine("showOrder");
+            Debug.Log("Capsule in");
         }
     }
 
@@ -161,7 +162,13 @@ public class RandomValue : MonoBehaviour
     {
         if(other.tag == "StartOrder")
         {
-        OrderCanvas.SetActive(false);
+            OrderCanvas.SetActive(false);
+            gameflow.orderValue = 0;
+            orderImage1.SetActive(false);
+            orderImage2.SetActive(false);
+            orderImage3.SetActive(false);
+            orderImage4.SetActive(false);
+            orderImage5.SetActive(false);
         } 
     }
 
