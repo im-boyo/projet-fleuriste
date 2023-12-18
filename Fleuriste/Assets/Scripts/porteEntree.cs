@@ -6,14 +6,14 @@ public class NewBehaviourScript : MonoBehaviour
 {
 
     public Animator mainDoor;
-    public GameObject mainDoorSound;
+    public AudioSource mainDoorSound;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "MainDoorArea")
         {
             mainDoor.Play("Ouverture");
-            mainDoorSound.SetActive(true);
+            mainDoorSound.Play();
         }
     }
     private void OnTriggerExit(Collider other)
@@ -21,7 +21,6 @@ public class NewBehaviourScript : MonoBehaviour
         if (other.tag == "MainDoorArea")
         {
             mainDoor.Play("fermeture");
-            mainDoorSound.SetActive(false);
         }
     }
 
