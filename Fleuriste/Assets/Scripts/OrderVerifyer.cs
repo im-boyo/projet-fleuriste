@@ -7,6 +7,8 @@ public class OrderVerifyer : MonoBehaviour
     public Animator girl1;
     public Animator myAnimator;
     public Animator nextAnimator;
+    public Animator lampAnimator;
+    public int winCondition = 0;
 
     private void OnTriggerEnter(Collider other){
         if(other.tag == "Bouquet"){
@@ -21,7 +23,17 @@ public class OrderVerifyer : MonoBehaviour
         } else if (other.tag == "NextClient")
         {
             StartCoroutine("animNext");
+            winCondition += 1;
+            if (winCondition == 6)
+            {
+                gameWin();
+            }
         }
+    }
+
+    private void gameWin()
+    {
+        
     }
     private IEnumerator animLeave()
     {
