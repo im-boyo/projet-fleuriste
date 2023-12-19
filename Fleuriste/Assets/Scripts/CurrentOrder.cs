@@ -19,7 +19,6 @@ public class CurrentOrder : MonoBehaviour
         {
             gameflow.bouquetValue += flowerValue;
             destroyerGameobject.SetActive(true);
-            Debug.Log(gameflow.bouquetValue + "  " + gameflow.orderValue);
         }
     }
     void Start()
@@ -40,10 +39,8 @@ public class CurrentOrder : MonoBehaviour
         if (other.tag == "Bouquet")
         {
             gameflow.bouquetValue -= flowerValue;
-            Debug.Log(gameflow.bouquetValue + "  " + gameflow.orderValue);
         } else if (other.tag == "Pot")
         {
-            Debug.Log("Order Value " + gameflow.orderValue);
             if (doesItExist == 0)
             {
                 doesItExist = 1;
